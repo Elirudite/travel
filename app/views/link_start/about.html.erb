@@ -1,17 +1,28 @@
 <style>
 	body {
-		background-color: <%= @color %>
+		color: <%= @color %>
 	}
 
 </style>
 
+<div class="font-colors">
+
 <h1>About My Travels</h1>
-<p>Behold our Epic. Traveling through the Oasis, the Gam3, and the Vertiverse</p>
+<p>Behold our Epic. Traveling through the OASIS, the Gam3, and the Vertiverse</p>
 
 <!-- Practicing SQL injections (querry strings)... :P ;) -->
-<p>My not-so-favorite color is <%= @color %></p>
-<p>My fist size is <%= @size %></p>
-<% if @size > 12 %>
-	<p>My Iron Fist is <big>HUGE</big></p>
-<% end %>
+<p>Throughout my travels...I have mastered the secret art of chronomancy. When circulating <%= @color %> energy</p>
+<p>My power level is ... <%= @power %></p>
 
+
+<p>
+<%= link_to "Lavender", about_path(color: "lavender", power: "steady"), class: "btn btn-primary" %>
+</p>
+<p>
+<%= link_to "Yellow", about_path(color: "yellow", power: "Rising"), class: "btn btn-warning" %>
+</p>
+<p>
+<%= link_to "Red", about_path(color: "red", power: "OVER 9000!!!!!!!!"), class: "btn btn-danger" %>
+</p>
+
+</div>

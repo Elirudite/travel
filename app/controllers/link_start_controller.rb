@@ -10,6 +10,6 @@ class LinkStartController < ApplicationController
 
   def about
   	@color = params[:color]
-  	@size = params[:size].to_i
+  	@power = params[:power]
   end
 end

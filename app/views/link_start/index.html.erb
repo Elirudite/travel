@@ -11,12 +11,12 @@
 
 <!-- Passing Image Names through an Array -->
 <% @images.each do |image| %>
-	<p><%= image_tag image, alt: "Cities", width: "100%" %></p>
+	<p><%= image_tag image, alt: "Cities", width: "100%", class: "img-responsive" %></p>
 <% end %>
 
 <!-- Passing Image Names and Alts through a Hash -->
 <% @images2.each do |key,value| %>
-	<p><%= image_tag value, alt: key %></p>
+	<p><%= image_tag value, alt: key, width: "100%", class: "img-responsive" %></p>
 <% end %>
 
 <%#= image_tag "futurecity.jpg", width: "100%", alt: "futurecity", id: "city-pic", class: "pics" %>
