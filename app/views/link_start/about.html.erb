@@ -1,0 +1,17 @@
+<style>
+	body {
+		background-color: <%= @color %>
+	}
+
+</style>
+
+<h1>About My Travels</h1>
+<p>Behold our Epic. Traveling through the Oasis, the Gam3, and the Vertiverse</p>
+
+<!-- Practicing SQL injections (querry strings)... :P ;) -->
+<p>My not-so-favorite color is <%= @color %></p>
+<p>My fist size is <%= @size %></p>
+<% if @size > 12 %>
+	<p>My Iron Fist is <big>HUGE</big></p>
+<% end %>
+

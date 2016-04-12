@@ -1,0 +1,25 @@
+<h1>LinkStart</h1>
+<p>Lets get Plugged in and Online!</p>
+<p>I hail from the <%= @homestate %></p>
+
+<h3>Thus be the Lands I have conquered:</h3>
+<ul>	
+<% @countries.each do |country| %>
+	<li><%= country %></li>
+<% end %>
+</ul>
+
+<!-- Passing Image Names through an Array -->
+<% @images.each do |image| %>
+	<p><%= image_tag image, alt: "Cities", width: "100%" %></p>
+<% end %>
+
+<!-- Passing Image Names and Alts through a Hash -->
+<% @images2.each do |key,value| %>
+	<p><%= image_tag value, alt: key %></p>
+<% end %>
+
+<%#= image_tag "futurecity.jpg", width: "100%", alt: "futurecity", id: "city-pic", class: "pics" %>
+<%#= image_tag "magical-city.jpg", width: "100%", alt: "magicalcity", id: "city-pic", class: "pics" %>
+<%#= image_tag "trekwars.jpg", width: "100%", alt: "spacecity", id: "city-pic", class: "pics" %>
+<%#= image_tag "coolscape.png", width: "100%", alt: "scapecity", id: "city-pic", class: "pics" %>
