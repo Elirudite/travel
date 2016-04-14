@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :destinations
   root 'link_start#index'
 
   get  'about' => 'link_start#about'
