@@ -20,9 +20,9 @@
         <p><strong>Pop:</strong> <%= number_with_delimiter destination.population %></p>
         
           <% if destination.avatar.url == nil %>
-            <%= image_tag "city_sil.png", alt: "No Image", width: "250" %>
+            <%= image_tag "city_sil.png", alt: "No Image", width: "100%", height: "33%" %>
           <% else %>
-            <p><%= image_tag destination.avatar.url, alt: "#{destination.city}", width: "250" %></p>
+            <p><%= image_tag destination.avatar.url, alt: "#{destination.city}", width: "100%", height: "33%" %></p>
           <% end %>
 
         <p><%= destination.description.html_safe %></p>

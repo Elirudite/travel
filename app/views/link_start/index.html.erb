@@ -9,7 +9,9 @@
 <% end %>
 </ul>
 
-<div id="destination-map"></div>
+<div id="map-canvas"></div>
+
+<br>
 
 <!-- Passing Image Names through an Array -->
 <% @images.each do |image| %>
@@ -26,10 +28,3 @@
 <%#= image_tag "trekwars.jpg", width: "100%", alt: "spacecity", id: "city-pic", class: "pics" %>
 <%#= image_tag "coolscape.png", width: "100%", alt: "scapecity", id: "city-pic", class: "pics" %>
 
-
-<%= javascript_tag do %>
- latitude = '<%= j @destination.latitude.to_s %>';
- longitude = '<%= j @destination.longitude.to_s %>';
- address = '<%= j @destination.address %>';
- description = '<%= j @destination.description %>';
-<% end %>
